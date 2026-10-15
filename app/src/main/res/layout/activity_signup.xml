@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FC"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:paddingTop="100dp"
+        android:paddingBottom="40dp">
+
+        <!-- TASKFLOW LOGO AND NAME -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="45dp">
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/taskflow_logo"
+                android:scaleType="fitCenter"
+                android:contentDescription="TaskFlow logo" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="TaskFlow"
+                android:textColor="#6C63FF"
+                android:textSize="32sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <!-- CREATE ACCOUNT HEADING -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textColor="#20233F"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <!-- SUBTITLE -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="45dp"
+            android:text="Join TaskFlow today"
+            android:textColor="#808080"
+            android:textSize="20sp"/>
+
+        <!-- FULL NAME -->
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full name"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:padding="12dp"
+            android:layout_marginBottom="25dp"
+            android:textSize="20sp"
+            android:backgroundTint="#555555"/>
+
+        <!-- EMAIL -->
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email address"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:padding="12dp"
+            android:layout_marginBottom="25dp"
+            android:textSize="20sp"
+            android:backgroundTint="#555555"/>
+
+        <!-- PASSWORD -->
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:padding="12dp"
+            android:layout_marginBottom="25dp"
+            android:textSize="20sp"
+            android:backgroundTint="#555555"/>
+
+        <!-- CONFIRM PASSWORD -->
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:padding="12dp"
+            android:layout_marginBottom="40dp"
+            android:textSize="20sp"
+            android:backgroundTint="#555555"/>
+
+        <!-- CREATE ACCOUNT BUTTON -->
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="CREATE ACCOUNT"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#6C63FF"
+            android:layout_marginBottom="45dp"/>
+
+        <!-- LOGIN LINK -->
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Already have an account? Login"
+            android:textColor="#7569D9"
+            android:textSize="18sp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </LinearLayout>
+
+</ScrollView>

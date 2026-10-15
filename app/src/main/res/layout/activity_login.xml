@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FC"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <!-- TASKFLOW LOGO -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="55dp">
+
+            <!-- Purple Square with White Checkmark -->
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/taskflow_logo"
+                android:scaleType="fitCenter"
+                android:contentDescription="TaskFlow logo" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="TaskFlow"
+                android:textColor="#6C63FF"
+                android:textSize="32sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <!-- WELCOME HEADING -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back!"
+            android:textColor="#1F2340"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <!-- SUBTITLE -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="55dp"
+            android:text="Sign in to manage your tasks."
+            android:textColor="#777777"
+            android:textSize="17sp"/>
+
+        <!-- EMAIL INPUT -->
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Email address"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:textColor="#1F2340"
+            android:textColorHint="#999999"
+            android:backgroundTint="#6C63FF"/>
+
+        <!-- PASSWORD INPUT -->
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="35dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:textColor="#1F2340"
+            android:textColorHint="#999999"
+            android:backgroundTint="#6C63FF"/>
+
+        <!-- LOGIN BUTTON -->
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:backgroundTint="#6C63FF"
+            android:text="LOGIN"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <!-- SIGN UP LINK -->
+
+        <TextView
+            android:id="@+id/tvGoToSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Don't have an account? Sign Up"
+            android:textColor="#6C63FF"
+            android:textSize="17sp"/>
+
+    </LinearLayout>
+
+</ScrollView>
